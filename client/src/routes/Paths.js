@@ -11,7 +11,7 @@ export default {
     },
     dashboard: {
         home: "home",
-        deposit: "deposit",
+        deposit_donation: "deposit_donation",
         referral: "referral",
     }
 }

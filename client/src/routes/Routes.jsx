@@ -5,6 +5,7 @@ import RegistrationContainer from "../components/RegisterationContainer/Registra
 import LoginContainer from "../components/LoginContainer/index.js";
 import {LoadingPage} from "../pages/LoadingPage";
 import ForgotPasswordContainer from "../components/ForgotPasswordContainer/index.js";
+import { DepositDonation } from "../components/DepositDonation/DepositDonation.jsx";
 
 export const MainRoutes = [
     getComponentObj("", <LoadingPage/>),
@@ -18,7 +19,9 @@ export const AuthRoutes = [
     getComponentObj(Paths.auth.reset_password, <ForgotPasswordContainer/>),
 ]
 
-export const DashboardRoutes = []
+export const DashboardRoutes = [
+    getComponentObj(Paths.dashboard.deposit_donation, <DepositDonation/>),
+]
 
 function getComponentObj(path, component){
     return  {route: `/${path}`, component: component}
